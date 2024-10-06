@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles to integrate Tailwind with Ant Design */
+body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+#root {
+  @apply min-h-screen flex flex-col;
+}
+
+/* Override Ant Design styles for dark theme */
+.ant-btn-primary {
+  @apply bg-blue-500 border-blue-500 hover:bg-blue-600 hover:border-blue-600;
+}
+
+.ant-input, .ant-input-password {
+  @apply bg-gray-800 border-gray-700 text-gray-100;
+}
+
+.ant-form-item-label > label {
+  @apply text-gray-300;
+}
